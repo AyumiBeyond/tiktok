@@ -1,5 +1,5 @@
 # iPhone 解锁TikTok/换区/发布视频 + 直播/点赞评论
-#摘要
+# 简介
 iOS系统版本：16.2 （支持向下兼容）
 TikTok版本：Version 27.1.0（前置操作：从 iTunes for Windows V 12.6.5.3 抓包 TikTok Version 21.1.0 安装，登陆后观看视频、直播、评论、点赞、发布视频等模块都正常使用后，再从 App Store 升级至最新版方可使用！）
 TikTok TestFlight Version 27.2.0
