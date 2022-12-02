@@ -40,23 +40,6 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/Tik
 5、换区：在[rewrite_local]中添加下句重写，并将CN改为想看的国家/地区的2位大写英文简写 JP（日本）｜KR（韩国）｜UK（英国）｜US（美国）｜TW（台湾）
 (?<=_region=)CN(?=&) url 307 CN
 6、开启Quantumult X：前往Quantumult X的主页 → 找到TikTok策略 → 长按添加节点 → TikTok愉快
-# Loon
-操作步骤
-1、打开Loon
-2、点击插件在右上角找到➕进去在URL添加想看的对应国家链接,tag处自定义；PROXY 选择TikTok分流策略即可。
-3、在[Remote Rule]下面添加TikTok分流规则，示例如下：
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Loon/TikTok.list, tag=TikTok, policy=TikTok, update-interval=86400, enabled=true
-# Surge
-操作步骤
-1、打开Surge
-2、点击模块进去添加想看国家的对应模块。
-3、添加以下分流
-# Shadowrocket
-操作步骤
-1、打开Shadowrocket
-2、开启HTTPS解密并安装、信任Shadowrocket证书： * 配置 → 你使用的配置文件后的i → HTTPS解密 → 开启HTTPS解密 → 生成新的CA证书 → 允许 → 返回点击安装证书，并点击允许 → 前往手机的设置，不是Shadowrocket的 → 看到已下载描述文件 → 安装 → 输入手机的解锁密码 → 安装 → 安装 → 前往手机的设置 → 通用 → 关于本机 → 证书信任设置 → 找到Shadowrocket…点绿它以信任该根证书 → 继续
-3、点击配置 → 模块 → 右上角加号，添加想看国家的对应模块。
-4、添加以下分流，点击配置 → 你使用的配置后的i → 规则 → 右上角加号 → 类型 → 选择RULE-SET → 策略 → 选择PROXY或者其他你想使用的策略（一般是对应地区的代理服务器节点） → 规则集URL文本框内填写
 # 抖音無法觀看
 在hostname中加上以下兩條
 -*snssdk.com, -*amemv.com
