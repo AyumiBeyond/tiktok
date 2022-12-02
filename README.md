@@ -16,18 +16,18 @@ App Store 下载 TikTok
 2、所以先配置好规则之后，然后在下载 TikTok，减少重定向的请求次数，降低风险，延长规则的寿命。
 3、为什么配置好之后还是无法使用，请检查软件的证书有没有安装，信任。 4、或者是 Https 解密（MiMt）与重写（Rewrite）有没有开启。
 5、或者是软件是不是盗版，比如用共享 ID 下载的，有设备限制，是无法使用重写脚本功能的。
-#Quantumult X
+# Quantumult X
 关于换区
 解锁并换区：将CN改为想看的国家/地区的2位大写英文简写，
 在HTTP复写中，将CN的替换值改为SG、MO、TW等即可换区
-#操作步骤
+# 操作步骤
 1、打开Quantumult X
 2、开启MitM并信任Quantumult X证书： * 设置 → MitM → 开启MitM → 生成密钥及证书 → 右上角点保存 → 允许安装描述文件 → 关闭 → 前往手机的设置，不在Quantumult X了 → 看到已下载描述文件 → 安装 → 输入手机的解锁密码 → 安装 → 安装 → 前往手机的设置 → 通用 → 关于本机 → 证书信任设置 → 找到Quantumult X Custom Root Certificate…点绿它以信任该根证书 → 继续
-#方法一：
+# 方法一：
 3、配置文件点击编辑找到[rewrite_remote]添加下面对应国家的复写
 日本
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-JP.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
-#方法二：
+# 方法二：
 3、在[rewrite_local]中添加以下重写
 (?<=_region=)CN(?=&) url 307 KR
 (?<=&mcc_mnc=)4 url 307 2
