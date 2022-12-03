@@ -37,8 +37,10 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/Tik
 hostname = *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com
 # 4、找到[filter_remote]添加下句分流(无论使用方法一或是方法二，此分流都需要添加！)
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
+
 5、换区：在[rewrite_local]中添加下句重写，并将CN改为想看的国家/地区的2位大写英文简写 JP（日本）｜KR（韩国）｜UK（英国）｜US（美国）｜TW（台湾）
 (?<=_region=)CN(?=&) url 307 CN
+
 6、开启Quantumult X：前往Quantumult X的主页 → 找到TikTok策略 → 长按添加节点 → TikTok愉快
 # 抖音無法觀看
 在hostname中加上以下兩條
